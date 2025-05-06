@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "4dae2dac-97a4-458e-b0f9-34771a1981a7",
+		"name": "Activity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41464701",
+		"_collection_link": "https://a99999-0947.postman.co/workspace/MeetX~6d0ae12a-603f-430c-bb54-57f23e14422d/collection/41464701-4dae2dac-97a4-458e-b0f9-34771a1981a7?action=share&source=collection_link&creator=41464701"
+	},
+	"item": [
+		{
+			"name": "Fetch-All",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/activity/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"activity",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Activity",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgxYTY5OWUxMzM3NDU5OWUzNjQyNjM0In0sImlhdCI6MTc0NjU2MTUzNCwiZXhwIjoxNzU1MjAxNTM0fQ.ZiElbl_Iyo9LunBWe9-1nj9prHYaLYxAI4M3mQ0TT9M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activityId\":\"681a3fb0ec9e950fd129e18b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/activity/book-activity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"activity",
+						"book-activity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Activity",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgxYTM3M2QyZjcwNzIzNDFjYTZkZTJjIn0sImlhdCI6MTc0NjU2MjA0NSwiZXhwIjoxNzU1MjAyMDQ1fQ.-au4EVP3Qg9N4pj6hPBXLAZ7LslcsP2zgdzRUxJlPiE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/activity/get-user-activity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"activity",
+						"get-user-activity"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
